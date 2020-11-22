@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import './app.scss';
+
+import { Container } from 'react-bootstrap';
+import ArticleSection from './Components/Articles/ArticleSection'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<Container className="mt-4">
+  <h1 className="text-danger">Related Articles</h1>
+  <p className="description">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis lacus lacus. Mauris commodo eget leo vitae ullamcorper. Proin sed turpis mi. Nam viverra pharetra nibh ultricies rutrum. Integer vulputate tristique pellentesque. Etiam viverra dolor nec.
+  </p>
+    <ArticleSection />
+</Container>
   );
 }
 

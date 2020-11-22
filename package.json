@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.2.2",
     "bootstrap": "^4.5.3",
+    "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
@@ -16,7 +17,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "npx eslint .",
+    "lint:fix": "npx eslint --fix --ext .js,.jsx .",
+    "stylelint": "npx stylelint \"**/*.scss\"",
+    "stylelint:fix": "npx stylelint \"**/*.scss\" --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -36,5 +41,21 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {"node-sass": "^4.14.1"}
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "node-sass": "^4.14.1",
+    "prettier-eslint": "^12.0.0",
+    "stylelint": "^13.8.0",
+    "stylelint-a11y": "^1.2.3",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-scss": "^3.18.0"
+  }
 }

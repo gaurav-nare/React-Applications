@@ -27,7 +27,7 @@ const ArticleSection = () => {
           aria-expanded={open}
           className="font-weight-bold text-uppercase p-3"
         >
-          Read More
+          {open ? "Read Less" : "Read More"}
         </Button>
       </div>
     </>
